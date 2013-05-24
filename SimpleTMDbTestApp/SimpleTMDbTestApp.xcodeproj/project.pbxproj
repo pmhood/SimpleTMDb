@@ -1,0 +1,425 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7F20457C17504F960076AE23 /* SimpleTMDb.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F20457B17504F960076AE23 /* SimpleTMDb.framework */; };
+		8F36B80D174DAE5B0097FAE3 /* STTMovieApiCastsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F36B80C174DAE5B0097FAE3 /* STTMovieApiCastsViewController.m */; };
+		8F7D3D06174DB02A00A10134 /* STTMovieApiBasicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F7D3D05174DB02A00A10134 /* STTMovieApiBasicViewController.m */; };
+		8F8433A6174AF2B300B8B70E /* STTBaseApiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F8433A4174AF2B300B8B70E /* STTBaseApiViewController.m */; };
+		8F8433A7174AF2B300B8B70E /* STTBaseApiViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F8433A5174AF2B300B8B70E /* STTBaseApiViewController.xib */; };
+		8F8433AE174AF7A400B8B70E /* STTParamEntryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F8433AC174AF7A400B8B70E /* STTParamEntryViewController.m */; };
+		8F8433AF174AF7A400B8B70E /* STTParamEntryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F8433AD174AF7A400B8B70E /* STTParamEntryViewController.xib */; };
+		8F8433B2174B048B00B8B70E /* STTBaseApiViewFooter.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F8433B1174B048B00B8B70E /* STTBaseApiViewFooter.xib */; };
+		8F8433B4174B10D600B8B70E /* 46-movie-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F8433B3174B10D600B8B70E /* 46-movie-2.png */; };
+		8F8433B6174B111D00B8B70E /* 111-user.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F8433B5174B111D00B8B70E /* 111-user.png */; };
+		8F94AFD11749A2D700004239 /* STTSelectMovieApiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F94AFCF1749A2D700004239 /* STTSelectMovieApiViewController.m */; };
+		8F94AFD21749A2D700004239 /* STTSelectMovieApiViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F94AFD01749A2D700004239 /* STTSelectMovieApiViewController.xib */; };
+		8F94AFD61749A72600004239 /* STTTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F94AFD41749A72600004239 /* STTTabBarController.m */; };
+		8F94AFD71749A72600004239 /* STTTabBarController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F94AFD51749A72600004239 /* STTTabBarController.xib */; };
+		8F94AFDC1749AB4C00004239 /* STTSelectPersonsApiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F94AFDA1749AB4C00004239 /* STTSelectPersonsApiViewController.m */; };
+		8F94AFDD1749AB4C00004239 /* STTSelectPersonsApiViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F94AFDB1749AB4C00004239 /* STTSelectPersonsApiViewController.xib */; };
+		8F94AFEB1749BB6900004239 /* STTResponseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F94AFEA1749BB4600004239 /* STTResponseViewController.xib */; };
+		8F94AFEC1749BB6D00004239 /* STTResponseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F94AFE91749BB4600004239 /* STTResponseViewController.m */; };
+		8FBA8485174DA57A000DAE08 /* STTMovieApiAlternativeTitlesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FBA8484174DA57A000DAE08 /* STTMovieApiAlternativeTitlesViewController.m */; };
+		8FC0257E174D9CD0005756A6 /* STTConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FC0257D174D9CD0005756A6 /* STTConstants.m */; };
+		8FFC371F17470D9500489E00 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FFC371E17470D9500489E00 /* UIKit.framework */; };
+		8FFC372117470D9500489E00 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FFC372017470D9500489E00 /* Foundation.framework */; };
+		8FFC372317470D9500489E00 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FFC372217470D9500489E00 /* CoreGraphics.framework */; };
+		8FFC372917470D9500489E00 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8FFC372717470D9500489E00 /* InfoPlist.strings */; };
+		8FFC372B17470D9500489E00 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FFC372A17470D9500489E00 /* main.m */; };
+		8FFC372F17470D9500489E00 /* STTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FFC372E17470D9500489E00 /* STTAppDelegate.m */; };
+		8FFC373117470D9500489E00 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 8FFC373017470D9500489E00 /* Default.png */; };
+		8FFC373317470D9500489E00 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8FFC373217470D9500489E00 /* Default@2x.png */; };
+		8FFC373517470D9500489E00 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8FFC373417470D9500489E00 /* Default-568h@2x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		7F20457B17504F960076AE23 /* SimpleTMDb.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SimpleTMDb.framework; path = "../../../../Users/hood/Library/Developer/Xcode/DerivedData/SimpleTMDb-adyurqhbomcjmodzakjzoddxnyvo/Build/Products/Debug-iphoneos/SimpleTMDb.framework"; sourceTree = DEVELOPER_DIR; };
+		8F36B80B174DAE5B0097FAE3 /* STTMovieApiCastsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = STTMovieApiCastsViewController.h; path = Movie/STTMovieApiCastsViewController.h; sourceTree = "<group>"; };
+		8F36B80C174DAE5B0097FAE3 /* STTMovieApiCastsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = STTMovieApiCastsViewController.m; path = Movie/STTMovieApiCastsViewController.m; sourceTree = "<group>"; };
+		8F7D3D04174DB02A00A10134 /* STTMovieApiBasicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = STTMovieApiBasicViewController.h; path = Movie/STTMovieApiBasicViewController.h; sourceTree = "<group>"; };
+		8F7D3D05174DB02A00A10134 /* STTMovieApiBasicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = STTMovieApiBasicViewController.m; path = Movie/STTMovieApiBasicViewController.m; sourceTree = "<group>"; };
+		8F8433A3174AF2B300B8B70E /* STTBaseApiViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STTBaseApiViewController.h; sourceTree = "<group>"; };
+		8F8433A4174AF2B300B8B70E /* STTBaseApiViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STTBaseApiViewController.m; sourceTree = "<group>"; };
+		8F8433A5174AF2B300B8B70E /* STTBaseApiViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = STTBaseApiViewController.xib; sourceTree = "<group>"; };
+		8F8433AB174AF7A400B8B70E /* STTParamEntryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STTParamEntryViewController.h; sourceTree = "<group>"; };
+		8F8433AC174AF7A400B8B70E /* STTParamEntryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STTParamEntryViewController.m; sourceTree = "<group>"; };
+		8F8433AD174AF7A400B8B70E /* STTParamEntryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = STTParamEntryViewController.xib; sourceTree = "<group>"; };
+		8F8433B0174AFD9300B8B70E /* STTParamEntryDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = STTParamEntryDelegate.h; sourceTree = "<group>"; };
+		8F8433B1174B048B00B8B70E /* STTBaseApiViewFooter.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = STTBaseApiViewFooter.xib; sourceTree = "<group>"; };
+		8F8433B3174B10D600B8B70E /* 46-movie-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "46-movie-2.png"; sourceTree = "<group>"; };
+		8F8433B5174B111D00B8B70E /* 111-user.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "111-user.png"; sourceTree = "<group>"; };
+		8F94AFCE1749A2D700004239 /* STTSelectMovieApiViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = STTSelectMovieApiViewController.h; path = Movie/STTSelectMovieApiViewController.h; sourceTree = "<group>"; };
+		8F94AFCF1749A2D700004239 /* STTSelectMovieApiViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = STTSelectMovieApiViewController.m; path = Movie/STTSelectMovieApiViewController.m; sourceTree = "<group>"; };
+		8F94AFD01749A2D700004239 /* STTSelectMovieApiViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = STTSelectMovieApiViewController.xib; path = Movie/STTSelectMovieApiViewController.xib; sourceTree = "<group>"; };
+		8F94AFD31749A72600004239 /* STTTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STTTabBarController.h; sourceTree = "<group>"; };
+		8F94AFD41749A72600004239 /* STTTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STTTabBarController.m; sourceTree = "<group>"; };
+		8F94AFD51749A72600004239 /* STTTabBarController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = STTTabBarController.xib; sourceTree = "<group>"; };
+		8F94AFD91749AB4C00004239 /* STTSelectPersonsApiViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = STTSelectPersonsApiViewController.h; path = Persons/STTSelectPersonsApiViewController.h; sourceTree = "<group>"; };
+		8F94AFDA1749AB4C00004239 /* STTSelectPersonsApiViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = STTSelectPersonsApiViewController.m; path = Persons/STTSelectPersonsApiViewController.m; sourceTree = "<group>"; };
+		8F94AFDB1749AB4C00004239 /* STTSelectPersonsApiViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = STTSelectPersonsApiViewController.xib; path = Persons/STTSelectPersonsApiViewController.xib; sourceTree = "<group>"; };
+		8F94AFE81749BB4600004239 /* STTResponseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = STTResponseViewController.h; sourceTree = "<group>"; };
+		8F94AFE91749BB4600004239 /* STTResponseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = STTResponseViewController.m; sourceTree = "<group>"; };
+		8F94AFEA1749BB4600004239 /* STTResponseViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = STTResponseViewController.xib; sourceTree = "<group>"; };
+		8FBA8483174DA57A000DAE08 /* STTMovieApiAlternativeTitlesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = STTMovieApiAlternativeTitlesViewController.h; path = Movie/STTMovieApiAlternativeTitlesViewController.h; sourceTree = "<group>"; };
+		8FBA8484174DA57A000DAE08 /* STTMovieApiAlternativeTitlesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = STTMovieApiAlternativeTitlesViewController.m; path = Movie/STTMovieApiAlternativeTitlesViewController.m; sourceTree = "<group>"; };
+		8FC0257C174D9CD0005756A6 /* STTConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STTConstants.h; sourceTree = "<group>"; };
+		8FC0257D174D9CD0005756A6 /* STTConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STTConstants.m; sourceTree = "<group>"; };
+		8FFC371B17470D9500489E00 /* SimpleTMDbTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleTMDbTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8FFC371E17470D9500489E00 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		8FFC372017470D9500489E00 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		8FFC372217470D9500489E00 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		8FFC372617470D9500489E00 /* SimpleTMDbTestApp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SimpleTMDbTestApp-Info.plist"; sourceTree = "<group>"; };
+		8FFC372817470D9500489E00 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8FFC372A17470D9500489E00 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8FFC372C17470D9500489E00 /* SimpleTMDbTestApp-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SimpleTMDbTestApp-Prefix.pch"; sourceTree = "<group>"; };
+		8FFC372D17470D9500489E00 /* STTAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = STTAppDelegate.h; sourceTree = "<group>"; };
+		8FFC372E17470D9500489E00 /* STTAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = STTAppDelegate.m; sourceTree = "<group>"; };
+		8FFC373017470D9500489E00 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		8FFC373217470D9500489E00 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		8FFC373417470D9500489E00 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8FFC371817470D9500489E00 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FFC371F17470D9500489E00 /* UIKit.framework in Frameworks */,
+				8FFC372117470D9500489E00 /* Foundation.framework in Frameworks */,
+				8FFC372317470D9500489E00 /* CoreGraphics.framework in Frameworks */,
+				7F20457C17504F960076AE23 /* SimpleTMDb.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8F94AFC817491DE100004239 /* Movie */ = {
+			isa = PBXGroup;
+			children = (
+				8F94AFCE1749A2D700004239 /* STTSelectMovieApiViewController.h */,
+				8F94AFCF1749A2D700004239 /* STTSelectMovieApiViewController.m */,
+				8F94AFD01749A2D700004239 /* STTSelectMovieApiViewController.xib */,
+				8FBA8483174DA57A000DAE08 /* STTMovieApiAlternativeTitlesViewController.h */,
+				8FBA8484174DA57A000DAE08 /* STTMovieApiAlternativeTitlesViewController.m */,
+				8F36B80B174DAE5B0097FAE3 /* STTMovieApiCastsViewController.h */,
+				8F36B80C174DAE5B0097FAE3 /* STTMovieApiCastsViewController.m */,
+				8F7D3D04174DB02A00A10134 /* STTMovieApiBasicViewController.h */,
+				8F7D3D05174DB02A00A10134 /* STTMovieApiBasicViewController.m */,
+			);
+			name = Movie;
+			sourceTree = "<group>";
+		};
+		8F94AFD81749AB2500004239 /* Persons */ = {
+			isa = PBXGroup;
+			children = (
+				8F94AFD91749AB4C00004239 /* STTSelectPersonsApiViewController.h */,
+				8F94AFDA1749AB4C00004239 /* STTSelectPersonsApiViewController.m */,
+				8F94AFDB1749AB4C00004239 /* STTSelectPersonsApiViewController.xib */,
+			);
+			name = Persons;
+			sourceTree = "<group>";
+		};
+		8FFC371217470D9500489E00 = {
+			isa = PBXGroup;
+			children = (
+				8FFC372417470D9500489E00 /* SimpleTMDbTestApp */,
+				8FFC371D17470D9500489E00 /* Frameworks */,
+				8FFC371C17470D9500489E00 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8FFC371C17470D9500489E00 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8FFC371B17470D9500489E00 /* SimpleTMDbTestApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8FFC371D17470D9500489E00 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7F20457B17504F960076AE23 /* SimpleTMDb.framework */,
+				8FFC371E17470D9500489E00 /* UIKit.framework */,
+				8FFC372017470D9500489E00 /* Foundation.framework */,
+				8FFC372217470D9500489E00 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8FFC372417470D9500489E00 /* SimpleTMDbTestApp */ = {
+			isa = PBXGroup;
+			children = (
+				8F94AFC817491DE100004239 /* Movie */,
+				8F94AFD81749AB2500004239 /* Persons */,
+				8FFC372D17470D9500489E00 /* STTAppDelegate.h */,
+				8FFC372E17470D9500489E00 /* STTAppDelegate.m */,
+				8F94AFD31749A72600004239 /* STTTabBarController.h */,
+				8F94AFD41749A72600004239 /* STTTabBarController.m */,
+				8F94AFD51749A72600004239 /* STTTabBarController.xib */,
+				8F94AFE81749BB4600004239 /* STTResponseViewController.h */,
+				8F94AFE91749BB4600004239 /* STTResponseViewController.m */,
+				8F94AFEA1749BB4600004239 /* STTResponseViewController.xib */,
+				8F8433A3174AF2B300B8B70E /* STTBaseApiViewController.h */,
+				8F8433A4174AF2B300B8B70E /* STTBaseApiViewController.m */,
+				8F8433A5174AF2B300B8B70E /* STTBaseApiViewController.xib */,
+				8F8433B1174B048B00B8B70E /* STTBaseApiViewFooter.xib */,
+				8F8433AB174AF7A400B8B70E /* STTParamEntryViewController.h */,
+				8F8433AC174AF7A400B8B70E /* STTParamEntryViewController.m */,
+				8F8433AD174AF7A400B8B70E /* STTParamEntryViewController.xib */,
+				8F8433B0174AFD9300B8B70E /* STTParamEntryDelegate.h */,
+				8FC0257C174D9CD0005756A6 /* STTConstants.h */,
+				8FC0257D174D9CD0005756A6 /* STTConstants.m */,
+				8FFC372517470D9500489E00 /* Supporting Files */,
+			);
+			path = SimpleTMDbTestApp;
+			sourceTree = "<group>";
+		};
+		8FFC372517470D9500489E00 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8FFC372617470D9500489E00 /* SimpleTMDbTestApp-Info.plist */,
+				8F8433B3174B10D600B8B70E /* 46-movie-2.png */,
+				8F8433B5174B111D00B8B70E /* 111-user.png */,
+				8FFC372717470D9500489E00 /* InfoPlist.strings */,
+				8FFC372A17470D9500489E00 /* main.m */,
+				8FFC372C17470D9500489E00 /* SimpleTMDbTestApp-Prefix.pch */,
+				8FFC373017470D9500489E00 /* Default.png */,
+				8FFC373217470D9500489E00 /* Default@2x.png */,
+				8FFC373417470D9500489E00 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8FFC371A17470D9500489E00 /* SimpleTMDbTestApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8FFC373817470D9500489E00 /* Build configuration list for PBXNativeTarget "SimpleTMDbTestApp" */;
+			buildPhases = (
+				8FFC371717470D9500489E00 /* Sources */,
+				8FFC371817470D9500489E00 /* Frameworks */,
+				8FFC371917470D9500489E00 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SimpleTMDbTestApp;
+			productName = SimpleTMDbTestApp;
+			productReference = 8FFC371B17470D9500489E00 /* SimpleTMDbTestApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8FFC371317470D9500489E00 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = STT;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Bridge Thirteen";
+			};
+			buildConfigurationList = 8FFC371617470D9500489E00 /* Build configuration list for PBXProject "SimpleTMDbTestApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 8FFC371217470D9500489E00;
+			productRefGroup = 8FFC371C17470D9500489E00 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8FFC371A17470D9500489E00 /* SimpleTMDbTestApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8FFC371917470D9500489E00 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FFC372917470D9500489E00 /* InfoPlist.strings in Resources */,
+				8FFC373117470D9500489E00 /* Default.png in Resources */,
+				8FFC373317470D9500489E00 /* Default@2x.png in Resources */,
+				8FFC373517470D9500489E00 /* Default-568h@2x.png in Resources */,
+				8F94AFD21749A2D700004239 /* STTSelectMovieApiViewController.xib in Resources */,
+				8F94AFD71749A72600004239 /* STTTabBarController.xib in Resources */,
+				8F94AFDD1749AB4C00004239 /* STTSelectPersonsApiViewController.xib in Resources */,
+				8F94AFEB1749BB6900004239 /* STTResponseViewController.xib in Resources */,
+				8F8433A7174AF2B300B8B70E /* STTBaseApiViewController.xib in Resources */,
+				8F8433AF174AF7A400B8B70E /* STTParamEntryViewController.xib in Resources */,
+				8F8433B2174B048B00B8B70E /* STTBaseApiViewFooter.xib in Resources */,
+				8F8433B4174B10D600B8B70E /* 46-movie-2.png in Resources */,
+				8F8433B6174B111D00B8B70E /* 111-user.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8FFC371717470D9500489E00 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FFC372B17470D9500489E00 /* main.m in Sources */,
+				8FFC372F17470D9500489E00 /* STTAppDelegate.m in Sources */,
+				8F94AFD11749A2D700004239 /* STTSelectMovieApiViewController.m in Sources */,
+				8F94AFD61749A72600004239 /* STTTabBarController.m in Sources */,
+				8F94AFDC1749AB4C00004239 /* STTSelectPersonsApiViewController.m in Sources */,
+				8F94AFEC1749BB6D00004239 /* STTResponseViewController.m in Sources */,
+				8F8433A6174AF2B300B8B70E /* STTBaseApiViewController.m in Sources */,
+				8F8433AE174AF7A400B8B70E /* STTParamEntryViewController.m in Sources */,
+				8FC0257E174D9CD0005756A6 /* STTConstants.m in Sources */,
+				8FBA8485174DA57A000DAE08 /* STTMovieApiAlternativeTitlesViewController.m in Sources */,
+				8F36B80D174DAE5B0097FAE3 /* STTMovieApiCastsViewController.m in Sources */,
+				8F7D3D06174DB02A00A10134 /* STTMovieApiBasicViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8FFC372717470D9500489E00 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8FFC372817470D9500489E00 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8FFC373617470D9500489E00 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		8FFC373717470D9500489E00 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8FFC373917470D9500489E00 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../../Library/Developer/Xcode/DerivedData/SimpleTMDb-fdsvdxaqbymticdquknxheevfkyt/Build/Products/Debug-iphoneos\"",
+					"\"$(SRCROOT)/../../../Library/Developer/Xcode/DerivedData/SimpleTMDb-adyurqhbomcjmodzakjzoddxnyvo/Build/Products/Debug-iphoneos\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SimpleTMDbTestApp/SimpleTMDbTestApp-Prefix.pch";
+				INFOPLIST_FILE = "SimpleTMDbTestApp/SimpleTMDbTestApp-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../../Library/Developer/Xcode/DerivedData/SimpleTMDb-ackxoudiflufiiagnzonntlxlcyk/Build/Products/Debug-iphoneos\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		8FFC373A17470D9500489E00 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../../Library/Developer/Xcode/DerivedData/SimpleTMDb-fdsvdxaqbymticdquknxheevfkyt/Build/Products/Debug-iphoneos\"",
+					"\"$(SRCROOT)/../../../Library/Developer/Xcode/DerivedData/SimpleTMDb-adyurqhbomcjmodzakjzoddxnyvo/Build/Products/Debug-iphoneos\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SimpleTMDbTestApp/SimpleTMDbTestApp-Prefix.pch";
+				INFOPLIST_FILE = "SimpleTMDbTestApp/SimpleTMDbTestApp-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../../Library/Developer/Xcode/DerivedData/SimpleTMDb-ackxoudiflufiiagnzonntlxlcyk/Build/Products/Debug-iphoneos\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8FFC371617470D9500489E00 /* Build configuration list for PBXProject "SimpleTMDbTestApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8FFC373617470D9500489E00 /* Debug */,
+				8FFC373717470D9500489E00 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8FFC373817470D9500489E00 /* Build configuration list for PBXNativeTarget "SimpleTMDbTestApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8FFC373917470D9500489E00 /* Debug */,
+				8FFC373A17470D9500489E00 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8FFC371317470D9500489E00 /* Project object */;
+}
