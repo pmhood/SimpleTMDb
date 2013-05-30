@@ -35,7 +35,6 @@ enum ParamIndex {
 
 
 - (IBAction)executeClicked:(id)sender {
-    NSLog(@"execute in basic info!");
     
     NSString *movieID = _paramArray[ParamIndexMovieID][1];
     NSString *country = _paramArray[ParamIndexCountry][1];

@@ -7,6 +7,13 @@
 //
 
 #import "STTMovieApiCastsViewController.h"
+#import <SimpleTMDb/SimpleTMDb.h>
+#import "STTResponseViewController.h"
+
+enum ParamIndex {
+    ParamIndexMovieID = 0,
+    ParamIndexAppendToResponse
+};
 
 @interface STTMovieApiCastsViewController ()
 
@@ -18,21 +25,23 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        // Custom initialization
+        [self setTitle:@"Casts"];
     }
     return self;
 }
 
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-	// Do any additional setup after loading the view.
-}
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (IBAction)executeClicked:(id)sender {
+    
+    NSString *movieID = _paramArray[ParamIndexMovieID][1];
+    NSString *appendToResponse = _paramArray[ParamIndexAppendToResponse][1];
+    
+    [[SimpleTMDb sharedInstance] movieCastsWithID:movieID
+                              andAppendToResponse:appendToResponse
+                                completionHandler:^(NSDictionary *dict) {
+                                                STTResponseViewController *responseView = [[STTResponseViewController alloc] init];
+                                                [[self navigationController] pushViewController:responseView animated:YES];
+                                                [[responseView responseTextView] setText:[dict description]];
+                                            }];
 }
 
 @end
