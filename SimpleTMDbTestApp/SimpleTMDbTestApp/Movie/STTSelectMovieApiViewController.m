@@ -13,12 +13,16 @@
 #import "STTMovieApiBasicViewController.h"
 #import "STTMovieApiAlternativeTitlesViewController.h"
 #import "STTMovieApiCastsViewController.h"
+#import "STTMovieApiImagesViewController.h"
 
-enum MovieApiIndex {
-    MovieApiIndexBasicInfo = 0,
-    MovieApiIndexAlternativeTitles,
-    MovieApiIndexCasts
+typedef NS_ENUM(NSInteger, STTMovieApiIndex)
+{
+    STTMovieApiIndexBasicInfo = 0,
+    STTMovieApiIndexAlternativeTitles,
+    STTMovieApiIndexCasts,
+    STTMovieApiIndexImages,
 };
+
 
 @interface STTSelectMovieApiViewController ()
 {
@@ -134,23 +138,39 @@ enum MovieApiIndex {
     NSArray *paramArray = nil;
     
     switch ([indexPath row]) {
-        case MovieApiIndexBasicInfo:
+        case STTMovieApiIndexBasicInfo:
+        {
             paramArray = [NSArray arrayWithObjects:@[@"id", kTMDbDefaultMovieID], @[@"append_to_response", @""], nil];
             baseViewController = [[STTMovieApiBasicViewController alloc] init];
             break;
-        case MovieApiIndexAlternativeTitles:
+        }
+        case STTMovieApiIndexAlternativeTitles:
+        {
             paramArray = [NSArray arrayWithObjects:@[@"id", kTMDbDefaultMovieID],
                           @[@"country", @""],
                           @[@"append_to_response", @""], nil];
             baseViewController = [[STTMovieApiAlternativeTitlesViewController alloc] init];
             break;
-        case MovieApiIndexCasts:
+        }
+        case STTMovieApiIndexCasts:
+        {
             paramArray = [NSArray arrayWithObjects:@[@"id", kTMDbDefaultMovieID],
                           @[@"append_to_response", @""], nil];
             baseViewController = [[STTMovieApiCastsViewController alloc] init];
             break;
+        }
+        case STTMovieApiIndexImages:
+        {
+            paramArray = [NSArray arrayWithObjects:@[@"id", kTMDbDefaultMovieID],
+                          @[@"language", @""],
+                          @[@"append_to_response", @""], nil];
+            baseViewController = [[STTMovieApiImagesViewController alloc] init];
+            
+            break;
+        }
             
         default:
+            NSLog(@"WARNING: Unknown row selected: %d", [indexPath row]);
             break;
     }
     

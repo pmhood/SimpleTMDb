@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		7F20457C17504F960076AE23 /* SimpleTMDb.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F20457B17504F960076AE23 /* SimpleTMDb.framework */; };
+		7F65A40217B3355500C81B66 /* STTMovieApiImagesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F65A40117B3355400C81B66 /* STTMovieApiImagesViewController.m */; };
+		7F65A40717B33D0B00C81B66 /* STTConfigurationApiContainerTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F65A40517B33D0B00C81B66 /* STTConfigurationApiContainerTableViewController.m */; };
+		7F65A40817B33D0B00C81B66 /* STTConfigurationApiContainerTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F65A40617B33D0B00C81B66 /* STTConfigurationApiContainerTableViewController.xib */; };
+		7F65A40A17B33FC600C81B66 /* 20-gear2.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F65A40917B33FC600C81B66 /* 20-gear2.png */; };
 		8F36B80D174DAE5B0097FAE3 /* STTMovieApiCastsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F36B80C174DAE5B0097FAE3 /* STTMovieApiCastsViewController.m */; };
 		8F7D3D06174DB02A00A10134 /* STTMovieApiBasicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F7D3D05174DB02A00A10134 /* STTMovieApiBasicViewController.m */; };
 		8F8433A6174AF2B300B8B70E /* STTBaseApiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F8433A4174AF2B300B8B70E /* STTBaseApiViewController.m */; };
@@ -40,6 +44,12 @@
 
 /* Begin PBXFileReference section */
 		7F20457B17504F960076AE23 /* SimpleTMDb.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SimpleTMDb.framework; path = "../../../../Users/hood/Library/Developer/Xcode/DerivedData/SimpleTMDb-adyurqhbomcjmodzakjzoddxnyvo/Build/Products/Debug-iphoneos/SimpleTMDb.framework"; sourceTree = DEVELOPER_DIR; };
+		7F65A40017B3355400C81B66 /* STTMovieApiImagesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = STTMovieApiImagesViewController.h; path = Movie/STTMovieApiImagesViewController.h; sourceTree = "<group>"; };
+		7F65A40117B3355400C81B66 /* STTMovieApiImagesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = STTMovieApiImagesViewController.m; path = Movie/STTMovieApiImagesViewController.m; sourceTree = "<group>"; };
+		7F65A40417B33D0B00C81B66 /* STTConfigurationApiContainerTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = STTConfigurationApiContainerTableViewController.h; path = Configuration/STTConfigurationApiContainerTableViewController.h; sourceTree = "<group>"; };
+		7F65A40517B33D0B00C81B66 /* STTConfigurationApiContainerTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = STTConfigurationApiContainerTableViewController.m; path = Configuration/STTConfigurationApiContainerTableViewController.m; sourceTree = "<group>"; };
+		7F65A40617B33D0B00C81B66 /* STTConfigurationApiContainerTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = STTConfigurationApiContainerTableViewController.xib; path = Configuration/STTConfigurationApiContainerTableViewController.xib; sourceTree = "<group>"; };
+		7F65A40917B33FC600C81B66 /* 20-gear2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "20-gear2.png"; sourceTree = "<group>"; };
 		8F36B80B174DAE5B0097FAE3 /* STTMovieApiCastsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = STTMovieApiCastsViewController.h; path = Movie/STTMovieApiCastsViewController.h; sourceTree = "<group>"; };
 		8F36B80C174DAE5B0097FAE3 /* STTMovieApiCastsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = STTMovieApiCastsViewController.m; path = Movie/STTMovieApiCastsViewController.m; sourceTree = "<group>"; };
 		8F7D3D04174DB02A00A10134 /* STTMovieApiBasicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = STTMovieApiBasicViewController.h; path = Movie/STTMovieApiBasicViewController.h; sourceTree = "<group>"; };
@@ -100,18 +110,48 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		8F94AFC817491DE100004239 /* Movie */ = {
+		7F65A3FE17B3327600C81B66 /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				8F94AFE81749BB4600004239 /* STTResponseViewController.h */,
+				8F94AFE91749BB4600004239 /* STTResponseViewController.m */,
+				8F94AFEA1749BB4600004239 /* STTResponseViewController.xib */,
+			);
+			name = Response;
+			sourceTree = "<group>";
+		};
+		7F65A3FF17B3340000C81B66 /* Container View Controller */ = {
 			isa = PBXGroup;
 			children = (
 				8F94AFCE1749A2D700004239 /* STTSelectMovieApiViewController.h */,
 				8F94AFCF1749A2D700004239 /* STTSelectMovieApiViewController.m */,
 				8F94AFD01749A2D700004239 /* STTSelectMovieApiViewController.xib */,
+			);
+			name = "Container View Controller";
+			sourceTree = "<group>";
+		};
+		7F65A40317B33B5100C81B66 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				7F65A40417B33D0B00C81B66 /* STTConfigurationApiContainerTableViewController.h */,
+				7F65A40517B33D0B00C81B66 /* STTConfigurationApiContainerTableViewController.m */,
+				7F65A40617B33D0B00C81B66 /* STTConfigurationApiContainerTableViewController.xib */,
+			);
+			name = Configuration;
+			sourceTree = "<group>";
+		};
+		8F94AFC817491DE100004239 /* Movie */ = {
+			isa = PBXGroup;
+			children = (
+				7F65A3FF17B3340000C81B66 /* Container View Controller */,
 				8FBA8483174DA57A000DAE08 /* STTMovieApiAlternativeTitlesViewController.h */,
 				8FBA8484174DA57A000DAE08 /* STTMovieApiAlternativeTitlesViewController.m */,
 				8F36B80B174DAE5B0097FAE3 /* STTMovieApiCastsViewController.h */,
 				8F36B80C174DAE5B0097FAE3 /* STTMovieApiCastsViewController.m */,
 				8F7D3D04174DB02A00A10134 /* STTMovieApiBasicViewController.h */,
 				8F7D3D05174DB02A00A10134 /* STTMovieApiBasicViewController.m */,
+				7F65A40017B3355400C81B66 /* STTMovieApiImagesViewController.h */,
+				7F65A40117B3355400C81B66 /* STTMovieApiImagesViewController.m */,
 			);
 			name = Movie;
 			sourceTree = "<group>";
@@ -157,16 +197,15 @@
 		8FFC372417470D9500489E00 /* SimpleTMDbTestApp */ = {
 			isa = PBXGroup;
 			children = (
+				7F65A40317B33B5100C81B66 /* Configuration */,
 				8F94AFC817491DE100004239 /* Movie */,
 				8F94AFD81749AB2500004239 /* Persons */,
+				7F65A3FE17B3327600C81B66 /* Response */,
 				8FFC372D17470D9500489E00 /* STTAppDelegate.h */,
 				8FFC372E17470D9500489E00 /* STTAppDelegate.m */,
 				8F94AFD31749A72600004239 /* STTTabBarController.h */,
 				8F94AFD41749A72600004239 /* STTTabBarController.m */,
 				8F94AFD51749A72600004239 /* STTTabBarController.xib */,
-				8F94AFE81749BB4600004239 /* STTResponseViewController.h */,
-				8F94AFE91749BB4600004239 /* STTResponseViewController.m */,
-				8F94AFEA1749BB4600004239 /* STTResponseViewController.xib */,
 				8F8433A3174AF2B300B8B70E /* STTBaseApiViewController.h */,
 				8F8433A4174AF2B300B8B70E /* STTBaseApiViewController.m */,
 				8F8433A5174AF2B300B8B70E /* STTBaseApiViewController.xib */,
@@ -185,6 +224,7 @@
 		8FFC372517470D9500489E00 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				7F65A40917B33FC600C81B66 /* 20-gear2.png */,
 				8FFC372617470D9500489E00 /* SimpleTMDbTestApp-Info.plist */,
 				8F8433B3174B10D600B8B70E /* 46-movie-2.png */,
 				8F8433B5174B111D00B8B70E /* 111-user.png */,
@@ -208,6 +248,7 @@
 				8FFC371717470D9500489E00 /* Sources */,
 				8FFC371817470D9500489E00 /* Frameworks */,
 				8FFC371917470D9500489E00 /* Resources */,
+				7F6240741756E80800288DFE /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -263,10 +304,28 @@
 				8F8433B2174B048B00B8B70E /* STTBaseApiViewFooter.xib in Resources */,
 				8F8433B4174B10D600B8B70E /* 46-movie-2.png in Resources */,
 				8F8433B6174B111D00B8B70E /* 111-user.png in Resources */,
+				7F65A40817B33D0B00C81B66 /* STTConfigurationApiContainerTableViewController.xib in Resources */,
+				7F65A40A17B33FC600C81B66 /* 20-gear2.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7F6240741756E80800288DFE /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "KEYWORDS=\"TODO:|FIXME:|\\?\\?\\?:|\\!\\!\\!:\"\nfind \"${SRCROOT}\" \\( -name \"*.h\" -or -name \"*.m\" \\) -print0 | xargs -0 egrep --with-filename --line-number --only-matching \"($KEYWORDS).*\\$\" | perl -p -e \"s/($KEYWORDS)/ warning: \\$1/\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8FFC371717470D9500489E00 /* Sources */ = {
@@ -285,6 +344,8 @@
 				8FBA8485174DA57A000DAE08 /* STTMovieApiAlternativeTitlesViewController.m in Sources */,
 				8F36B80D174DAE5B0097FAE3 /* STTMovieApiCastsViewController.m in Sources */,
 				8F7D3D06174DB02A00A10134 /* STTMovieApiBasicViewController.m in Sources */,
+				7F65A40217B3355500C81B66 /* STTMovieApiImagesViewController.m in Sources */,
+				7F65A40717B33D0B00C81B66 /* STTConfigurationApiContainerTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

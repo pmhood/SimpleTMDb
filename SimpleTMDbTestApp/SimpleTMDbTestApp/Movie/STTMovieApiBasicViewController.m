@@ -48,4 +48,10 @@ int kParamIndexAppendToResponse = 1;
     
 }
 
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
+{
+    return @"Get the basic movie information for a specific movie id.";
+}
+
+
 @end

@@ -37,11 +37,17 @@ enum ParamIndex {
     
     [[SimpleTMDb sharedInstance] movieCastsWithID:movieID
                               andAppendToResponse:appendToResponse
-                                completionHandler:^(NSDictionary *dict) {
-                                                STTResponseViewController *responseView = [[STTResponseViewController alloc] init];
-                                                [[self navigationController] pushViewController:responseView animated:YES];
-                                                [[responseView responseTextView] setText:[dict description]];
-                                            }];
+                                completionHandler:^(NSDictionary *dict)
+    {
+        STTResponseViewController *responseView = [[STTResponseViewController alloc] init];
+        [[self navigationController] pushViewController:responseView animated:YES];
+        [[responseView responseTextView] setText:[dict description]];
+    }];
+}
+
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
+{
+    return @"Get the cast information for a specific movie id.";
 }
 
 @end

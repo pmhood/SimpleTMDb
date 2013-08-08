@@ -12,6 +12,7 @@
 #import <SimpleTMDb/SimpleTMDb.h>
 #import "Movie/STTSelectMovieApiViewController.h"
 #import "Persons/STTSelectPersonsApiViewController.h"
+#import "Configuration/STTConfigurationApiContainerTableViewController.h"
 
 @implementation STTAppDelegate
 
@@ -26,14 +27,20 @@
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
 
-    STTSelectMovieApiViewController *moviesViewController = [[STTSelectMovieApiViewController alloc] init];
-    STTSelectPersonsApiViewController *personsViewController = [[STTSelectPersonsApiViewController alloc] init];
+    STTConfigurationApiContainerTableViewController *configurationViewController = [[STTConfigurationApiContainerTableViewController alloc] init];
+    UINavigationController *configurationNav = [[UINavigationController alloc] initWithRootViewController:configurationViewController];
 
-    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:moviesViewController];
     
+    STTSelectMovieApiViewController *moviesViewController = [[STTSelectMovieApiViewController alloc] init];
+    UINavigationController *moviesNav = [[UINavigationController alloc] initWithRootViewController:moviesViewController];
+
+    STTSelectPersonsApiViewController *personsViewController = [[STTSelectPersonsApiViewController alloc] init];
+    UINavigationController *personsNav = [[UINavigationController alloc] initWithRootViewController:personsViewController];
+
+
     
     STTTabBarController *tbc = [[STTTabBarController alloc] initWithNibName:@"STTTabBarController" bundle:nil];
-    [tbc setViewControllers:@[nav, personsViewController]];
+    [tbc setViewControllers:@[configurationNav, moviesNav, personsNav]];
 
     [[self window] setRootViewController:tbc];
     

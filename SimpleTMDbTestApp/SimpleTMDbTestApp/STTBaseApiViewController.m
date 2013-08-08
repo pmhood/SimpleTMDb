@@ -11,6 +11,13 @@
 #import "STTParamEntryDelegate.h"
 #import <SimpleTMDb/SimpleTMDb.h>
 
+typedef NS_ENUM(NSInteger, STTBaseApiFieldIndex)
+{
+    STTBaseApiFieldIndexTitle = 0,
+    STTBaseApiFieldIndexValue
+};
+
+
 @interface STTBaseApiViewController ()<STTParamEntryDelegate>
 {
 //    NSMutableArray *_paramArray;
@@ -102,7 +109,7 @@
 
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
 {
-    return @"Get the basic movie information for a specific movie id.";
+    return @"";
 }
 
 
