@@ -7,9 +7,21 @@
 //
 
 #import "STTSelectPersonsApiViewController.h"
+#import "STTBaseApiViewController.h"
+
+#import "STTPersonApiSearchViewController.h"
+
+
+typedef NS_ENUM(NSInteger, STTPersonApiIndex)
+{
+    STTPersonApiIndexSearch = 0,
+};
+
 
 @interface STTSelectPersonsApiViewController ()
-
+{
+    NSArray* _apiList;
+}
 @end
 
 @implementation STTSelectPersonsApiViewController
@@ -18,12 +30,17 @@
 {
     self = [super initWithStyle:style];
     if (self) {
+
+        _apiList = @[@"Search"];
+        
+        self.title = @"Person API";
+        
+        // Setup tab bar item
         UITabBarItem *tbi = [self tabBarItem];
         [tbi setTitle:@"Persons"];
         
         UIImage *i = [UIImage imageNamed:@"111-user.png"];
         [tbi setImage:i];
-
     }
     return self;
 }
@@ -50,13 +67,13 @@
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
     // Return the number of sections.
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     // Return the number of rows in the section.
-    return 0;
+    return [_apiList count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -68,6 +85,7 @@
     }
     
     // Configure the cell...
+    cell.textLabel.text = _apiList[indexPath.row];
     
     return cell;
 }
@@ -115,13 +133,33 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    // Navigation logic may go here. Create and push another view controller.
-    /*
-     <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];
-     // ...
-     // Pass the selected object to the new view controller.
-     [self.navigationController pushViewController:detailViewController animated:YES];
-     */
+    STTBaseApiViewController *baseViewController = nil;
+    NSArray *paramArray = nil;
+    
+    switch (indexPath.row)
+    {
+        case STTPersonApiIndexSearch:
+        {
+            paramArray = [NSArray arrayWithObjects:@[@"query", @"will"],
+                          @[@"page", @1],
+                          @[@"includeAdult", @0],
+                          @[@"searchType", @"phrase"],
+                          nil];
+            baseViewController = [[STTPersonApiSearchViewController alloc] init];
+            break;
+        }
+            
+        default:
+            NSLog(@"WARNING: Unknown row selected: %d", [indexPath row]);
+            break;
+    }
+    
+    if(baseViewController)
+    {
+        [baseViewController setParameters:paramArray];
+        [self.navigationController pushViewController:baseViewController animated:YES];
+    }
+    
 }
 
 @end

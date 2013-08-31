@@ -9,6 +9,15 @@
 #import <Foundation/Foundation.h>
 #import "STMMovie.h"
 
+
+typedef NS_ENUM(NSUInteger, STMSearchType)
+{
+    STMSearchTypePhrase,
+    STMSearchTypeNgram
+};
+
+
+
 @interface SimpleTMDb : NSObject
 
 @property (nonatomic, copy) NSString *apiKey;
@@ -39,5 +48,11 @@
 - (void)movieNowPlayingWithPage:(NSString *)page andLanguage:(NSString *)language completionHandler:(void (^)(NSDictionary *))handler;
 - (void)moviePopularWithPage:(NSString *)page andLanguage:(NSString *)language completionHandler:(void (^)(NSDictionary *))handler;
 - (void)movieTopRatedWithPage:(NSString *)page andLanguage:(NSString *)language completionHandler:(void (^)(NSDictionary *))handler;
+
+
+#pragma mark - Search API
+
+- (void)searchForPersonByName:(NSString *)name page:(NSUInteger)page includeAdult:(BOOL)isIncludeAdult searchType:(STMSearchType)searchType completionHandler:(void (^)(NSDictionary *))handler;
+
 
 @end

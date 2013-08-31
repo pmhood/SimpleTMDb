@@ -7,12 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7F20457C17504F960076AE23 /* SimpleTMDb.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F20457B17504F960076AE23 /* SimpleTMDb.framework */; };
 		7F65A40217B3355500C81B66 /* STTMovieApiImagesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F65A40117B3355400C81B66 /* STTMovieApiImagesViewController.m */; };
 		7F65A40717B33D0B00C81B66 /* STTConfigurationApiContainerTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F65A40517B33D0B00C81B66 /* STTConfigurationApiContainerTableViewController.m */; };
 		7F65A40817B33D0B00C81B66 /* STTConfigurationApiContainerTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F65A40617B33D0B00C81B66 /* STTConfigurationApiContainerTableViewController.xib */; };
 		7F65A40A17B33FC600C81B66 /* 20-gear2.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F65A40917B33FC600C81B66 /* 20-gear2.png */; };
 		8F36B80D174DAE5B0097FAE3 /* STTMovieApiCastsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F36B80C174DAE5B0097FAE3 /* STTMovieApiCastsViewController.m */; };
+		8F3E9A2417D17DF800A74A10 /* SimpleTMDb.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F3E9A2317D17DF800A74A10 /* SimpleTMDb.framework */; };
+		8F3E9A2817D18A2700A74A10 /* STTPersonApiSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F3E9A2717D18A2700A74A10 /* STTPersonApiSearchViewController.m */; };
 		8F7D3D06174DB02A00A10134 /* STTMovieApiBasicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F7D3D05174DB02A00A10134 /* STTMovieApiBasicViewController.m */; };
 		8F8433A6174AF2B300B8B70E /* STTBaseApiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F8433A4174AF2B300B8B70E /* STTBaseApiViewController.m */; };
 		8F8433A7174AF2B300B8B70E /* STTBaseApiViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F8433A5174AF2B300B8B70E /* STTBaseApiViewController.xib */; };
@@ -42,8 +43,24 @@
 		8FFC373517470D9500489E00 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8FFC373417470D9500489E00 /* Default-568h@2x.png */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		8F3E9A1B17D17D0000A74A10 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8F3E9A1617D17D0000A74A10 /* SimpleTMDb.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8FD6B7D417486DA600B101A7;
+			remoteInfo = SimpleTMDb;
+		};
+		8F3E9A1D17D17D0000A74A10 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8F3E9A1617D17D0000A74A10 /* SimpleTMDb.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8FD6B7E217486DA600B101A7;
+			remoteInfo = SimpleTMDbTests;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
-		7F20457B17504F960076AE23 /* SimpleTMDb.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SimpleTMDb.framework; path = "../../../../Users/hood/Library/Developer/Xcode/DerivedData/SimpleTMDb-adyurqhbomcjmodzakjzoddxnyvo/Build/Products/Debug-iphoneos/SimpleTMDb.framework"; sourceTree = DEVELOPER_DIR; };
 		7F65A40017B3355400C81B66 /* STTMovieApiImagesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = STTMovieApiImagesViewController.h; path = Movie/STTMovieApiImagesViewController.h; sourceTree = "<group>"; };
 		7F65A40117B3355400C81B66 /* STTMovieApiImagesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = STTMovieApiImagesViewController.m; path = Movie/STTMovieApiImagesViewController.m; sourceTree = "<group>"; };
 		7F65A40417B33D0B00C81B66 /* STTConfigurationApiContainerTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = STTConfigurationApiContainerTableViewController.h; path = Configuration/STTConfigurationApiContainerTableViewController.h; sourceTree = "<group>"; };
@@ -52,6 +69,10 @@
 		7F65A40917B33FC600C81B66 /* 20-gear2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "20-gear2.png"; sourceTree = "<group>"; };
 		8F36B80B174DAE5B0097FAE3 /* STTMovieApiCastsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = STTMovieApiCastsViewController.h; path = Movie/STTMovieApiCastsViewController.h; sourceTree = "<group>"; };
 		8F36B80C174DAE5B0097FAE3 /* STTMovieApiCastsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = STTMovieApiCastsViewController.m; path = Movie/STTMovieApiCastsViewController.m; sourceTree = "<group>"; };
+		8F3E9A1617D17D0000A74A10 /* SimpleTMDb.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SimpleTMDb.xcodeproj; path = ../framework/SimpleTMDb/SimpleTMDb.xcodeproj; sourceTree = "<group>"; };
+		8F3E9A2317D17DF800A74A10 /* SimpleTMDb.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SimpleTMDb.framework; path = "../../../../Library/Developer/Xcode/DerivedData/SimpleTMDbTestApp-grjigtrnztwdprfekapudpgbihtt/Build/Products/Debug-iphoneos/SimpleTMDb.framework"; sourceTree = "<group>"; };
+		8F3E9A2617D18A2700A74A10 /* STTPersonApiSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = STTPersonApiSearchViewController.h; path = Persons/STTPersonApiSearchViewController.h; sourceTree = "<group>"; };
+		8F3E9A2717D18A2700A74A10 /* STTPersonApiSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = STTPersonApiSearchViewController.m; path = Persons/STTPersonApiSearchViewController.m; sourceTree = "<group>"; };
 		8F7D3D04174DB02A00A10134 /* STTMovieApiBasicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = STTMovieApiBasicViewController.h; path = Movie/STTMovieApiBasicViewController.h; sourceTree = "<group>"; };
 		8F7D3D05174DB02A00A10134 /* STTMovieApiBasicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = STTMovieApiBasicViewController.m; path = Movie/STTMovieApiBasicViewController.m; sourceTree = "<group>"; };
 		8F8433A3174AF2B300B8B70E /* STTBaseApiViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STTBaseApiViewController.h; sourceTree = "<group>"; };
@@ -103,7 +124,7 @@
 				8FFC371F17470D9500489E00 /* UIKit.framework in Frameworks */,
 				8FFC372117470D9500489E00 /* Foundation.framework in Frameworks */,
 				8FFC372317470D9500489E00 /* CoreGraphics.framework in Frameworks */,
-				7F20457C17504F960076AE23 /* SimpleTMDb.framework in Frameworks */,
+				8F3E9A2417D17DF800A74A10 /* SimpleTMDb.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,6 +161,25 @@
 			name = Configuration;
 			sourceTree = "<group>";
 		};
+		8F3E9A1717D17D0000A74A10 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8F3E9A1C17D17D0000A74A10 /* SimpleTMDb.framework */,
+				8F3E9A1E17D17D0000A74A10 /* SimpleTMDbTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8F3E9A2517D1885000A74A10 /* Container View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8F94AFD91749AB4C00004239 /* STTSelectPersonsApiViewController.h */,
+				8F94AFDA1749AB4C00004239 /* STTSelectPersonsApiViewController.m */,
+				8F94AFDB1749AB4C00004239 /* STTSelectPersonsApiViewController.xib */,
+			);
+			name = "Container View Controller";
+			sourceTree = "<group>";
+		};
 		8F94AFC817491DE100004239 /* Movie */ = {
 			isa = PBXGroup;
 			children = (
@@ -159,9 +199,9 @@
 		8F94AFD81749AB2500004239 /* Persons */ = {
 			isa = PBXGroup;
 			children = (
-				8F94AFD91749AB4C00004239 /* STTSelectPersonsApiViewController.h */,
-				8F94AFDA1749AB4C00004239 /* STTSelectPersonsApiViewController.m */,
-				8F94AFDB1749AB4C00004239 /* STTSelectPersonsApiViewController.xib */,
+				8F3E9A2517D1885000A74A10 /* Container View Controller */,
+				8F3E9A2617D18A2700A74A10 /* STTPersonApiSearchViewController.h */,
+				8F3E9A2717D18A2700A74A10 /* STTPersonApiSearchViewController.m */,
 			);
 			name = Persons;
 			sourceTree = "<group>";
@@ -186,7 +226,8 @@
 		8FFC371D17470D9500489E00 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				7F20457B17504F960076AE23 /* SimpleTMDb.framework */,
+				8F3E9A2317D17DF800A74A10 /* SimpleTMDb.framework */,
+				8F3E9A1617D17D0000A74A10 /* SimpleTMDb.xcodeproj */,
 				8FFC371E17470D9500489E00 /* UIKit.framework */,
 				8FFC372017470D9500489E00 /* Foundation.framework */,
 				8FFC372217470D9500489E00 /* CoreGraphics.framework */,
@@ -279,12 +320,35 @@
 			mainGroup = 8FFC371217470D9500489E00;
 			productRefGroup = 8FFC371C17470D9500489E00 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 8F3E9A1717D17D0000A74A10 /* Products */;
+					ProjectRef = 8F3E9A1617D17D0000A74A10 /* SimpleTMDb.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				8FFC371A17470D9500489E00 /* SimpleTMDbTestApp */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		8F3E9A1C17D17D0000A74A10 /* SimpleTMDb.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SimpleTMDb.framework;
+			remoteRef = 8F3E9A1B17D17D0000A74A10 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		8F3E9A1E17D17D0000A74A10 /* SimpleTMDbTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SimpleTMDbTests.octest;
+			remoteRef = 8F3E9A1D17D17D0000A74A10 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		8FFC371917470D9500489E00 /* Resources */ = {
@@ -346,6 +410,7 @@
 				8F7D3D06174DB02A00A10134 /* STTMovieApiBasicViewController.m in Sources */,
 				7F65A40217B3355500C81B66 /* STTMovieApiImagesViewController.m in Sources */,
 				7F65A40717B33D0B00C81B66 /* STTConfigurationApiContainerTableViewController.m in Sources */,
+				8F3E9A2817D18A2700A74A10 /* STTPersonApiSearchViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -426,6 +491,7 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/../../../../Library/Developer/Xcode/DerivedData/SimpleTMDb-fdsvdxaqbymticdquknxheevfkyt/Build/Products/Debug-iphoneos\"",
 					"\"$(SRCROOT)/../../../Library/Developer/Xcode/DerivedData/SimpleTMDb-adyurqhbomcjmodzakjzoddxnyvo/Build/Products/Debug-iphoneos\"",
+					"\"$(SRCROOT)/../../../../Library/Developer/Xcode/DerivedData/SimpleTMDbTestApp-grjigtrnztwdprfekapudpgbihtt/Build/Products/Debug-iphoneos\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SimpleTMDbTestApp/SimpleTMDbTestApp-Prefix.pch";
@@ -446,6 +512,7 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/../../../../Library/Developer/Xcode/DerivedData/SimpleTMDb-fdsvdxaqbymticdquknxheevfkyt/Build/Products/Debug-iphoneos\"",
 					"\"$(SRCROOT)/../../../Library/Developer/Xcode/DerivedData/SimpleTMDb-adyurqhbomcjmodzakjzoddxnyvo/Build/Products/Debug-iphoneos\"",
+					"\"$(SRCROOT)/../../../../Library/Developer/Xcode/DerivedData/SimpleTMDbTestApp-grjigtrnztwdprfekapudpgbihtt/Build/Products/Debug-iphoneos\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SimpleTMDbTestApp/SimpleTMDbTestApp-Prefix.pch";

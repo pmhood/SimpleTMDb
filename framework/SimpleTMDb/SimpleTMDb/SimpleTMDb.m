@@ -10,6 +10,10 @@
 
 NSString * const kApiURL = @"http://api.themoviedb.org/3";
 
+// Search Type String Values
+static const NSString *TMDbSearchTypePhrase = @"phrase";
+static const NSString *TMDbSearchTypeNgram  = @"ngram";
+
 
 @interface SimpleTMDb ()
 {
@@ -195,6 +199,19 @@ NSString * const kApiURL = @"http://api.themoviedb.org/3";
     NSString *urlString = [NSString stringWithFormat:@"%@/movie/top_rated?api_key=%@&page=%@&language=%@", kApiURL, [self apiKey], page, language];
     [self handleRequestWithURL:urlString completionBlock:handler];
 
+}
+
+
+#pragma mark - Search API
+
+- (void)searchForPersonByName:(NSString *)name page:(NSUInteger)page includeAdult:(BOOL)isIncludeAdult searchType:(STMSearchType)searchType completionHandler:(void (^)(NSDictionary *))handler
+{
+    NSString *searchTypeString = @"phrase";
+    if (searchType == STMSearchTypeNgram)
+        searchTypeString = @"ngram";
+    
+    NSString *urlString = [NSString stringWithFormat:@"%@/search/person?api_key=%@&query=%@&page=%d&include_adult=%@&search_type=%@", kApiURL, [self apiKey], name, page, isIncludeAdult?@"true":@"false", searchTypeString];
+    [self handleRequestWithURL:urlString completionBlock:handler];
 }
 
 
